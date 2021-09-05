@@ -1,0 +1,562 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@200&family=Dancing+Script&family=Lobster&family=Satisfy&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --bg: black;
+  --clr: white;
+}
+
+body {
+  color: var(--clr);
+  font-family: 'Alumni Sans', sans-serif;
+  font-size: 1.5em;
+}
+
+.header {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../photo/t1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.header .navbar {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.header .navbar .name {
+  margin: 0 5px;
+}
+
+.header .navbar .links {
+  width: 60%;
+}
+
+.header .navbar .links ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .navbar .links ul li {
+  border: 2px solid var(--clr);
+  -webkit-transition: background .3s ease-in;
+  transition: background .3s ease-in;
+}
+
+.header .navbar .links ul li:hover {
+  background: var(--clr);
+}
+
+.header .navbar .links ul li a {
+  font-family: 'Satisfy', cursive;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: var(--clr);
+  padding: 5px;
+  -webkit-transition: color .3s ease-in;
+  transition: color .3s ease-in;
+}
+
+.header .navbar .links ul li a:hover {
+  color: red;
+}
+
+.header .thesis {
+  border: 1px solid var(--clr);
+  max-width: 300px;
+  line-height: 1.2;
+  padding: 10px 5px;
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+}
+
+.header .thesis p {
+  font-family: 'Alumni Sans', sans-serif;
+}
+
+.header .latest-wrapper {
+  position: relative;
+}
+
+.header .latest-wrapper .latest-song {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  padding: 10px;
+}
+
+.header .latest-wrapper .latest-song .c-art {
+  width: 100%;
+  height: 100%;
+}
+
+.header .latest-wrapper .latest-song .c-art img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.header .latest-wrapper .latest-song .latest-song-info {
+  width: 100%;
+  text-align: center;
+}
+
+.header .latest-wrapper .latest-song .latest-song-info .name {
+  color: gold;
+  font-weight: bold;
+  border-bottom: 1px solid var(--clr);
+  font-family: 'Satisfy', cursive;
+}
+
+.header .latest-wrapper .latest-song .latest-song-info .ft {
+  color: red;
+  font-weight: bold;
+}
+
+.header .platforms {
+  border-top: 1px solid var(--clr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .platforms .social, .header .platforms .listening {
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.header .platforms .social a img, .header .platforms .listening a img {
+  width: 35px;
+}
+
+.about {
+  height: 100%;
+  width: 100vw;
+  background-image: url("../photo/t2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  padding: 10px  0;
+  font-family: 'Alumni Sans', sans-serif;
+}
+
+.about h1 {
+  text-align: center;
+  border-bottom: 1px solid var(--clr);
+  margin: 20px 0;
+  font-size: 1em;
+}
+
+.about .abt-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about .abt-img {
+  width: 50%;
+}
+
+.about .abt-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.about .abt-text {
+  padding: 0 5px;
+  width: 100%;
+}
+
+.songs-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(320deg, #292727, #262f38, #423125);
+  padding: 30px;
+}
+
+.songs-wrapper .song-card {
+  width: 100%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  margin: 30px 0;
+}
+
+.songs-wrapper .song-card .cover-art {
+  width: 100%;
+  height: 100%;
+}
+
+.songs-wrapper .song-card .cover-art img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.songs-wrapper .song-card .song {
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--clr);
+  border-left: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 5px;
+  line-height: 1.3;
+}
+
+.songs-wrapper .song-card .song .singers {
+  text-transform: uppercase;
+}
+
+.songs-wrapper .song-card .song .singers .singer-name {
+  color: red;
+}
+
+.songs-wrapper .song-card .song .stream img {
+  width: 20px;
+}
+
+.songs-wrapper .song-card .song .stream .listen, .songs-wrapper .song-card .song .stream .yt {
+  margin: 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.songs-wrapper .song-card .song .stream .listen img, .songs-wrapper .song-card .song .stream .yt img {
+  margin-left: 8px;
+}
+
+.tour-wrapper {
+  height: 100%;
+  width: 100vw;
+  background-image: url("../photo/tr.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  padding: 10px  0;
+}
+
+.tour-wrapper .tour {
+  width: 100%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1em;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.tour-wrapper .tour .t-img {
+  width: 50%;
+  margin-right: 20px;
+}
+
+.tour-wrapper .tour .t-img img {
+  width: 100%;
+  height: 100%;
+  padding-right: 20px;
+  border-radius: 20px;
+}
+
+.tour-wrapper .tour .tr-in {
+  width: 100%;
+}
+
+.tour-wrapper .tour .tr-in h2 {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  padding: 5px 10px;
+  color: #bb111f;
+  border: 1px solid silver;
+}
+
+.tour-wrapper .tour .date {
+  background-color: grey;
+  text-align: center;
+}
+
+.tour-r {
+  width: 100%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.tour-r .t-img {
+  width: 50%;
+}
+
+.tour-r .t-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.tour-r .tr-in {
+  width: 100%;
+}
+
+.tour-r .tr-in h2 {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  padding: 5px 10px;
+  color: #bbb011;
+  border: 1px solid silver;
+}
+
+.tour-r .date {
+  background: #7a220c;
+  text-align: center;
+}
+
+.features {
+  width: 100%;
+  height: auto;
+  background: var(--bg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.features .feat {
+  margin: 10px 0;
+  border: 2px solid gold;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: inset 2px 2px 8px grey;
+          box-shadow: inset 2px 2px 8px grey;
+}
+
+.features .feat img {
+  width: 100%;
+}
+
+.features .feat .detail {
+  border-top: 2px solid gold;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  text-align: center;
+  line-height: 1.4;
+}
+
+.features .feat .detail .name {
+  color: red;
+}
+
+footer {
+  background: #1010a5;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 100px;
+  font-family: 'Satisfy', cursive;
+}
+
+.dvi {
+  font-size: 2em;
+  margin: 20px 0;
+  color: gold;
+  font-weight: bolder;
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  .about h1 {
+    font-size: 2em;
+  }
+  .about .abt-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about .abt-text {
+    padding: 0 5px;
+    width: 100%;
+    font-size: 1.5em;
+  }
+  .songs-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    background-image: linear-gradient(320deg, #292727, #262f38, #423125);
+    padding: 30px;
+  }
+  .songs-wrapper .song-card {
+    width: 400px;
+    height: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    margin: 30px 0;
+  }
+  .tour-wrapper .tour {
+    font-size: 1.3em;
+  }
+  .features .feat {
+    width: 300px;
+  }
+  .dvi {
+    font-size: 5em;
+  }
+}
