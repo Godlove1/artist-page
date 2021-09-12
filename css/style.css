@@ -16,6 +16,7 @@ body {
   font-family: 'Alumni Sans',
  sans-serif;
   font-size: 1.5em;
+  overflow-x:hidden;
 }
 
 .header {
