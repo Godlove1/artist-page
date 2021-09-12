@@ -454,7 +454,7 @@ body {
 .features .feat {
   margin: 10px 0;
   border: 2px solid gold;
-  width: 198px;
+  width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
