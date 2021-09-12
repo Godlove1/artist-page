@@ -454,7 +454,7 @@ body {
 .features .feat {
   margin: 10px 0;
   border: 2px solid gold;
-  width: 240px;
+  width: 190px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -489,18 +489,17 @@ body {
 }
 
 footer {
-  background: #1010a5;
+  background: grey;
   display: -ms-grid;
   display: grid;
   place-items: center;
   height: 100px;
-  font-family: 'Satisfy',
- cursive;
+  font-family: 'Satisfy',cursive;
+    color: white;
 }
 
 .dvi {
-  font-size: 2em;
-  margin: 20px 0;
+  margin: 5px 0;
   color: gold;
   font-weight: bolder;
   text-align: center;
